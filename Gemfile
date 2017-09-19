@@ -25,12 +25,21 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-gem 'active_model_serializers', '~> 0.8.1'
+#gem 'active_model_serializers', '~> 0.8.1'
+
+
+
+gem 'bcrypt', '~> 3.1.7'
 gem 'devise', '~> 4.2.0'
+gem 'devise_token_auth'
+gem 'rack-cors'
+gem 'omniauth'
+gem 'omniauth-github'
+
+
 
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'thin'
+#gem 'thin'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -40,6 +49,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry'
   gem 'faker'
+  gem 'dotenv-rails'
 end
 
 group :development do
